@@ -1,4 +1,6 @@
 
+simdi de veli...
+
 ali
 
 The reason for making plant and controller black-box is as follows:
