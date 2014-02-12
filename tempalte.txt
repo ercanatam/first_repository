@@ -1,0 +1,57 @@
+
+Dear Roel,
+
+first let me start to say that the conventions that I suggested are not the things that I developed
+myself. They are the common conventions used in modeling and control community.
+Everybody may think that the way he or she models a system is the best way.
+In case, of a conflict, then, what is the solution? The solution is to see how the hings are done professionally
+in the related communities.
+In the attachment I am sending another example how naming conventions are done professionally.
+I took this from internet, It is not something that I did.
+
+The template that I suugested can be applied at any level if you have multi-level
+control. 
+
+The reason for making plant and controller black-box is as follows:
+-to minimize the effort that other poeple will spend to understand the details of how you modeled, the system
+and how you coded the controller. This is not required.
+Just to make clear: given a system, I can model totally different and you may model totally different.
+You do not need what was in my mind when I modeled in that way. Without a signal, block naming, hierarchy
+levels it is impossible to understand what is going on. For a very complex system, this will be almost impossible.
+
+The physical insight of the system or controller is totally irrelevant with what I suggested.
+For both modeling and control (including the rule-based control) you need to understand how the system is working.
+But that does not mean that you have to understand how the model was developed  by X for that system. 
+The person X may model the system in such a way that it may be very difficult to understand the system from his or 
+her modeling. 
+
+Let me give a concrete example: I may prefer to model a PID controller using a state-space approcah or
+I may model PID using a bond graph approcah. If a person is not familiar with bond graph approach, he or she will
+not understand from my components how PID is working. However, it is clearly not needed to know bond graphs to understand PID.
+In this case, the physical insight of a PID controller has nothing to do the with bond graph.
+You CANNOT force somebody to understand your bond-graph based PID to understand a normal PID. 
+However, in case that PID is modeled in a black-box way, nobody will care whether a state-space approcah or 
+bond graph approcah is used. Why? Because simply it is not needed! Input-output behaviour is enough for the
+person to use PID. Do wee need to open inside of a PID when we take a PID from a library?
+We all use PID and hence know its physical insight. But we still do not open inside it. Why?
+Because we do not need...
+
+
+Let me stresss it again: black-box does not mean that you do not need the insight of the system or controller.
+It just means to reduce the dependency on the style/approcah of the person who develeped it.
+
+Morever, i prefer this kind of professional approach because otherwise I will always need to 
+ask people to explain their models.
+The help/collaboration I received so far is very poor for me. If things are not clear for me, I will need
+a good documentation. However, what I observed so far is that people are not so collaborative to give
+a good documentation, to explain their models. Just giving a model to somenody and saying read this phd/papers
+is simply to esacpe from responsibilities.
+
+Here is not kindergarten and I cannot beg people to explian their models.
+If the proffesional way I suugested is followed, the dependency of one petrson on another will be decreased.
+Lastly, but not least, please see do not forget to see the profesional example in the attachment
+to see how modeling is done.
+
+Good weekend.
+ 
+
