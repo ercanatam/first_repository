@@ -1,16 +1,5 @@
 
-Dear Roel,
-
-first let me start to say that the conventions that I suggested are not the things that I developed
-myself. They are the common conventions used in modeling and control community.
-Everybody may think that the way he or she models a system is the best way.
-In case, of a conflict, then, what is the solution? The solution is to see how the hings are done professionally
-in the related communities.
-In the attachment I am sending another example how naming conventions are done professionally.
-I took this from internet, It is not something that I did.
-
-The template that I suugested can be applied at any level if you have multi-level
-control. 
+ali
 
 The reason for making plant and controller black-box is as follows:
 -to minimize the effort that other poeple will spend to understand the details of how you modeled, the system
